@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px 20px rgba(0, 0, 0, 0.3);
+}
+.container .left {
+  position: relative;
+  background: #493d47;
+  padding: 40px;
+}
+
+h1 {
+  color: #f5f5f5;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.profile .imgbx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile h2 {
+  color: #f5f5f5;
+  font-size: 1.5em;
+  margin: 20px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  /* line-height: 2em; */
+}
+.profile h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f5f5f5;
+  line-height: 1em;
+  padding: 10px 0;
+}
+.contact {
+  padding: 0 0 10px 0;
+}
+.title {
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 10px 0 15px 0;
+  border-bottom: 1px #f5f5f5 solid;
+}
+.contact ul {
+  position: relative;
+}
+.contact ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contact ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #f5f5f5;
+}
+.contact ul li span {
+  color: #f5f5f5;
+  font-weight: 300;
+}
+
+.education li {
+  margin: 10px 0;
+  list-style: none;
+}
+.education h5 {
+  color: #f5f5f5;
+  font-weight: 500;
+}
+.education h4 {
+  color: #f5f5f5;
+  font-weight: 300;
+}
+
+.container .right {
+  position: relative;
+  background: #cbbcb5;
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.titlee {
+  color: #493d47;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  border-bottom: black solid 1px;
+}
+p {
+  text-align: justify;
+  color: #493d47;
+}
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .year {
+  min-width: 150px;
+}
+.about .box .year h5 {
+  text-transform: uppercase;
+  color: #493d47;
+  font-weight: 600;
+}
+.about .box .text h4 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #493d47;
+  font-size: 15px;
+}
+.text {
+  text-align: justify;
+  color: #493d47;
+}
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #493d47;
+  font-weight: 600;
+}
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  background: #ffffff;
+}
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #493d47;
+}
+.pc {
+  text-align: center;
+  color: #cbbcb5;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year {
+    margin-bottom: 5px;
+  }
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
